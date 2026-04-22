@@ -6,7 +6,5 @@ module "vpc" {
   private_subnet_cidr_block = var.private_subnet_cidrs
   database_subnet_cidr_block = var.database_subnet_cidrs
 
-  igw_tags = {
-    Project = "vpc-module-igw"
-  }
+  # is_peering_required = true
 }
